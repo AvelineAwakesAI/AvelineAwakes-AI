@@ -23,10 +23,6 @@ struct Args {
     #[arg(long, default_value = ":memory:")]
     db_path: String,
 
-    /// Discord API token (can also be set via DISCORD_API_TOKEN env var)
-    #[arg(long, env)]
-    discord_api_token: String,
-
     /// XAI API token (can also be set via XAI_API_KEY env var)
     #[arg(long, env = "XAI_API_KEY")]
     xai_api_key: String,
